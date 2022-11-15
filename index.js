@@ -68,5 +68,5 @@ app.get('/showBookedRooms',(req,res)=>{
 app.get('/showCustomers',(req,res)=>{
     res.send(customers);
 })
-
-app.listen(3001,()=>console.log('server is working '));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT ,()=>console.log(`server is working ${PORT}`));
