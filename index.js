@@ -4,6 +4,11 @@ const app = express();
 let room = [];
 let bookRoom =[];
 let customers=[];
+
+
+app.get("/",(req,res)=>{
+res.send("hey welcome to manish page")
+})
 app.post('/createRoom/:id/:roomName/:seatsAvailable/:amenities/:price_per_hr',(req,res)=>{
 let  id = req.params.id;
 let roomName = req.params.roomName;
